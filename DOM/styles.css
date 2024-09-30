@@ -1,9 +1,0 @@
-body {
-  background-color: bisque;
-}
-
-body > div {
-  background: white;
-  padding: 2em;
-  margin: 5em;
-}
