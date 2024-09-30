@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="pirmas">
+      <h1 id="pirma-antraste">Pirma antraste</h1>
+      <p id="pirmas-patagrafas">Pirmas paragrafas</p>
+    </div>
+
+    <div id="antras">
+      <p id="paragrafo-tekstas">Si teksta turime matyti konsoleje</p>
+    </div>
+
+    <div id="trecias">
+      <p>Turime matyti konsoleje paragrafa arba tik teksta</p>
+    </div>
+
+    <div id="ketvirtas">
+      <button
+        onclick="document.getElementById('paragrafas-pakeitimui').innerHTML = 'Pakeistas paragrafo tekstas'"
+      >
+        Pakeisti teksta
+      </button>
+      <p id="paragrafas-pakeitimui">Nepakeistas paragrafo tekstas</p>
+    </div>
+
+    <div id="penktas">
+      <button
+        onclick="document.getElementById('paragrafas-5').style.fontSize = '35px'"
+      >
+        Pakeisti dydi
+      </button>
+      <button
+        onclick="document.getElementById('paragrafas-5').style.color = 'red'"
+      >
+        Pakeisti spalva
+      </button>
+      <p id="paragrafas-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+        quibusdam dolores nulla recusandae laboriosam sapiente expedita
+        mollitia, dolorum ad amet rerum aspernatur similique ipsum, soluta error
+        molestiae eligendi provident? Eveniet.
+      </p>
+    </div>
+
+    <div id="sestas">
+      <p>
+        <img src="./light-off.png" alt="lempute" id="lempute" />
+      </p>
+
+      <button onclick="document.getElementById('lempute').src = 'light-on.png'">
+        Ijungti lempute
+      </button>
+      <button
+        onclick="document.getElementById('lempute').src = 'light-off.png'"
+      >
+        Isjungti lempute
+      </button>
+    </div>
+
+    <div id="septintas">
+      <button onclick="pakeisti()">Pakeisti teksta</button>
+      <p id="septinto-tekstas">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, minima!
+        Eligendi pariatur repellat labore in id quis quia eius. Incidunt aliquid
+        vitae iusto. Ex id adipisci amet doloremque nam corrupti.
+      </p>
+    </div>
+
+    <div id="astuntas">
+      <button onclick="pakeisti2('astunto-tekstas', 'vienas du trys')">
+        Pakeisti teksta 1
+      </button>
+      <button
+        onclick="pakeisti2('astunto-tekstas', 'batai kupranugaris meska')"
+      >
+        Pakeisti teksta 2
+      </button>
+      <button onclick="pakeisti2('astunto-tekstas', 'stalas kede medis')">
+        Pakeisti teksta 3
+      </button>
+      <button onclick="pakeisti2('astunto-tekstas', 'berzas obelis gyvate')">
+        Pakeisti teksta 4
+      </button>
+      <p id="astunto-tekstas">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, voluptate
+        mollitia? Voluptas maxime perspiciatis atque nobis, quisquam magnam iste
+        deserunt nihil ex minima corporis, repellat quae obcaecati, natus
+        debitis ipsa.
+      </p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
